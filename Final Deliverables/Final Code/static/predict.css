@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/62ee05535cac0abf3062d703_Rectangle%201%20(63).svg");
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.main {
+    margin: 0 17%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(253, 231, 251);
+    /* border-radius: 1rem; */
+    border-radius: 0px;
+    /* box-shadow: 0px 0px 35px 1px gray; */
+}
+
+.header {
+    margin: .5rem 0 2rem;
+    padding-right: 3rem;
+    color: #000000;
+}
+
+.formresult{
+    border-style: ridge;
+    border-color: black;
+    border-radius:2px;
+}
+
+
+.left{
+    float: left;
+    padding-right: 3rem;
+    height: 5rem;
+}
+
+.right{
+    float: left;
+    padding-right: 3rem;
+    height: 5rem;
+}
+
+.sign_in {
+    margin-top: .75rem;
+    margin-right: 3rem;
+    margin-bottom: .75rem;
+    width: 150px;
+    background-image: linear-gradient(135deg, #ffbbf1 10%);
+}
+
+.already_acc {
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+}
+
+.form-floating > label > .imp_red {
+    color: red;
+}
+
+.anchor_deco {
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 767px){
+    body {
+        height: auto;
+        font-size: medium;
+    }
+
+    .main {
+        margin: 3rem 11%;
+    }
+}
+
+@media (max-width: 577px){
+    body {
+        font-size: smaller;
+    }
+
+    .left{
+        float: left;
+        width: 100%;
+    }
+    
+    .right{
+        float: left;
+        width: 100%;
+    }
+}
+
+
+input [type=text], select{
+    width: 100%;
+    height: 72%;
+    padding: 12px 20px;
+    appearance: none;
+    --webkit-appearence:none;
+    -moz-appearance: none;
+    display: inline-block;
+    box-sizing: border-box;
+    border-color: rgb(210, 210, 210)
+}
+
+

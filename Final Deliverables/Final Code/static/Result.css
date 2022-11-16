@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    /* width: 100%;
+    height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/62ee05535cac0abf3062d703_Rectangle%201%20(63).svg");
+    text-align: center;
+}
+
+  input[type=submit] {
+    height: 1.5cm;
+    width: 5cm;
+    margin-top: 40px;
+    color: #ffffff;
+    border: 2px solid #666abe;
+    font-size: 17px;
+    background-color: #4c3df7;
+    border-radius: 4px;
+  }
+
+.resbox{
+    margin-top: 5cm;
+    border-style: groove;
+    border-radius: 3px;
+    border-color: black;
+    font-style: italic
+    background-color: rgb(255, 207, 248);
+    height: 8cm;
+    width: 8cm;
+}

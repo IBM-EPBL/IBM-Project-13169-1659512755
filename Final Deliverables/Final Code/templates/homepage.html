@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="/static/homepage.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="box-form">
+	<div class="left">
+		<img src="/static/uni2.jfif">
+	</div>
+		<div class="right">
+			<div class="overlay">
+				<h5>UNIVERSITY ADMIT ELIGIBILITY PREDICTOR</h5>
+				<p>This web page helps students to know the universities to which they are eligible for. This prediction is done based on their marks which includes GRE,TOEFL Scores and other details like research done,SOP,LOR and their desired university rating by using a machine learning model</p>
+
+<!--				<button class="btn btn-primary sign_in" type="button" formaction="{{ url_for('predictpage') }}"> Get started </button>-->
+				<form name="submitform" method="post" action="{{ url_for('predictpage') }}">
+					<input type="submit" value="GET STARTED" name="action1"/>
+				</form>
+				<br><br><br><br>
+			<div>
+	</div>
+</div>
+</body>
+</html>
