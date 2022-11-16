@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eligibility Predcitor </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="/static/predict.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="{{ url_for('static',filename='predict.css')}}">-->
+<!--    <style>-->
+<!--        ul.select2-selection__rendered{-->
+<!--            position: relative;-->
+<!--            height: 48px;-->
+<!--            border-color: rgb(210, 210, 210);-->
+<!--        }-->
+<!--        .select2-container&#45;&#45;default .select2-selection&#45;&#45;multiple {-->
+<!--        background-color: white;-->
+<!--        border: 1px solid rgb(210, 210, 210);-->
+<!--        border-radius: 4px;-->
+<!--        cursor: text;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+    <form action="{{ url_for('y_predict') }}" method="post">
+    <div class="main">
+        <center><h3 class="header">ACADEMIC AND EDUCATIONAL DETAILS</h3></center>
+
+        <div class="form-floating left col-lg-6 col-md-6 col-sm-12">
+            <input type="number" class="form-control" name="gscore" placeholder="GRE Score [0-340]" min="0" max="340" required>
+            <label for="gscore"> GRE SCORE <sup class="imp_red">*</sup> </label>
+        </div>
+
+        <div class="form-floating right col-lg-6 col-md-6 col-sm-12">
+            <input type="number" class="form-control" name="tscore" placeholder="TOFEL Score [0-120]" min="0" max="120" required>
+            <label for="tscore"> TOFEL SCORE <sup class="imp_red">*</sup> </label>
+        </div>
+
+        <div class="form-floating right col-lg-6 col-md-6 col-sm-12">
+            <input type="number" class="form-control" name="urating" placeholder="University Rating [1-5]" step="0.01" min="1" max="5" required>
+            <label for="urating"> University Rating <sup class="imp_red">*</sup> </label>
+        </div>
+
+
+        <div class="form-floating right col-lg-6 col-md-6 col-sm-12">
+            <input type="number" class="form-control" name="sop" placeholder="Number of SOP [1-5]" step="0.01" min="1" max="5" required>
+            <label for="sop"> SOP <sup class="imp_red">*</sup> </label>
+        </div>
+
+        <div class="form-floating right col-lg-6 col-md-6 col-sm-12">
+            <input type="number" class="form-control" name="lor" placeholder="Number of LOR [1-5]" step="0.01" min="1" max="5" required>
+            <label for="lor"> Letter of Recomendation <sup class="imp_red">*</sup> </label>
+        </div>
+
+        <div class="form-floating right col-lg-6 col-md-6 col-sm-12">
+            <input type="number" class="form-control" name="cgpa" placeholder="CGPA [1-10]" step="0.01" min="1" max="10" required>
+            <label for="cgpa"> CGPA <sup class="imp_red">*</sup> </label>
+        </div>
+
+        <div class="form-floating left col-lg-6 col-md-6 col-sm-12">
+            <select name="research" id="research" class="form-select" required>
+                <option value="" ></option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <label for="research" class="form-label">Research<sup class="imp_red">*</sup></label>
+        </div>
+
+        <center><button class="btn btn-primary sign_in" type="submit"> Predict </button></center>
+    </div>
+    </form>
+<!--    <div class="formresult">-->
+<!--        {{ prediction_text }}-->
+<!--    </div>-->
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    margin-top: 30px;
+    background-image: linear-gradient(135deg, #666abe 10%, #e4e4e4 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    /*color: #18015f;*/
+    /* color:#00163A; */
+    background-image: url("https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/62ee05535cac0abf3062d703_Rectangle%201%20(63).svg");
+  }
+  .box-form {
+    margin: 0 auto;
+    margin-top: 1.5cm;
+    width: 80%;
+    background: #fefefe;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+  }
+  @media (max-width: 800px) {
+    .box-form {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  .box-form div {
+    height: auto;
+  }
+  .box-form .left {
+    color: #ffffff;
+    width: 55%;
+    height:auto;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  img {
+    width: 20cm;
+    height: 16cm;
+    padding-bottom: 0%;
+  }
+  .box-form .left .overlay {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  } 
+  @media (max-width: 800px) {
+    .box-form .right {
+      width: 100%;
+    }
+  }
+  @media (max-width: 800px) {
+    .box-form .left {
+      width: 100%;
+    }
+  }
+  .box-form .right .overlay h5 {
+    margin-top: 2px;
+    font-size: 3.0vmax;
+    line-height: 1;
+  }
+  .box-form .right .overlay p {
+    font-size: 17px;
+    text-align:justify;
+    color: #000000;
+  }
+  
+  input[type=submit] {
+    height: 1.5cm;
+    width: 5cm;
+    margin-top: 40px;
+    color: #ffffff;
+    border: 2px solid #666abe;
+    font-size: 17px;
+    background-color: #4c3df7;
+    border-radius: 4px;
+    }
+
+  .box-form .right .overlay {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .box-form .right {
+    width: 50%;
+    background-color: #ffffff;
+  }
+
+  .box-form .right {
+    color: #191e9f;
+    width: 45%;
+  }
